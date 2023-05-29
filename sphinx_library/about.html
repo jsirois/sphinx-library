@@ -4,7 +4,7 @@
     {% if '://' in logo_url %}
     <img class="logo" src="{{ logo_url }}" alt="{{ project }}"/>
     {% else %}
-    <img class="logo" src="{{ pathto('_static/' + logo_url, 1)|e }}" alt="{{ project }}"/>
+    <img class="logo" src="{{ pathto(logo_url, 1)|e }}" alt="{{ project }}"/>
     {% endif %}
   </a>
 </p>
