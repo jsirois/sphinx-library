@@ -1,11 +1,7 @@
 {%- if logo_url %}
 <p class="logo">
   <a href="{{ pathto(master_doc)|e }}" title="{{ project }}">
-    {% if '://' in logo_url %}
     <img class="logo" src="{{ logo_url }}" alt="{{ project }}"/>
-    {% else %}
-    <img class="logo" src="{{ pathto(logo_url, 1)|e }}" alt="{{ project }}"/>
-    {% endif %}
   </a>
 </p>
 {%- endif %}
